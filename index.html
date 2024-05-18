@@ -15,7 +15,7 @@
             min-height: 100vh;
             background-color: #EEF7FF;
             margin: 0;
-            padding-bottom: 100px; /* Space for the ConvertKit form */
+            padding-bottom: 150px; /* Increased space for the ConvertKit form */
         }
         .header {
             width: 100%;
@@ -97,6 +97,7 @@
         .convertkit-form {
             width: 80%;
             margin-top: 20px;
+            position: relative;
         }
     </style>
 </head>
@@ -116,9 +117,8 @@
         </a>
     </div>
     <div class="convertkit-form">
-        <!-- ConvertKit form will be inserted here -->
+        <script async data-uid="ee9637e301" src="https://richard-powazynski.ck.page/ee9637e301/index.js"></script>
     </div>
-    <script async data-uid="ee9637e301" src="https://richard-powazynski.ck.page/ee9637e301/index.js"></script>
     <script>
         const textarea = document.getElementById('writingArea');
         const saveButton = document.getElementById('saveButton');
