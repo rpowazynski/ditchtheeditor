@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ditch the Editor</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVNX1EKY3R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QVNX1EKY3R');
+    </script>
     <style>
         body {
             font-family: 'Playfair Display', serif;
@@ -18,15 +27,15 @@
         }
         .header {
             width: 100%;
-            background-color: #4D869C;
+            background-color: #28385E;
             color: white;
             text-align: center;
-            padding: 10px 0; 
+            padding: 20px 0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin: 0;
         }
         .header h2 {
-            margin: 10px 0 0 0;
+            margin: 5px 0 0 0; /* Reduced space */
             font-size: 1.2em;
         }
         textarea {
@@ -49,25 +58,41 @@
             justify-content: space-between;
             align-items: center;
         }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
         button {
             padding: 10px 20px;
             font-size: 16px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            background-color: #4D869C;
+        }
+        #saveButton {
+            background-color: #516C8D;
             color: white;
         }
-        button:hover {
+        #saveButton:hover {
             background-color: #3b6b80;
         }
+        #refreshButton {
+            background-color: #DDDDDD;
+            color: #28385E;
+        }
+        #refreshButton:hover {
+            background-color: #1d2a46;
+        }
         .social {
-            margin-left: auto; /* Aligns the icon to the right */
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
         }
         .social a {
             color: #4D869C;
             text-decoration: none;
             display: flex;
+            justify-content: center;
             align-items: center;
         }
         .social a:hover {
@@ -87,15 +112,17 @@
     <textarea id="writingArea" placeholder="Start writing..."></textarea>
     <div class="controls">
         <button id="saveButton">Save</button>
-        <div class="social">
-            <a href="https://www.x.com/ditchtheeditor" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg" alt="Twitter Icon">
-            </a>
-        </div>
+        <button id="refreshButton">Refresh</button>
+    </div>
+    <div class="social">
+        <a href="https://www.x.com/ditchtheeditor" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg" alt="Twitter Icon">
+        </a>
     </div>
     <script>
         const textarea = document.getElementById('writingArea');
         const saveButton = document.getElementById('saveButton');
+        const refreshButton = document.getElementById('refreshButton');
 
         textarea.addEventListener('keydown', (e) => {
             if (['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) {
@@ -111,7 +138,10 @@
             link.download = 'writing.txt';
             link.click();
         });
+
+        refreshButton.addEventListener('click', () => {
+            textarea.value = '';
+        });
     </script>
 </body>
 </html>
-
