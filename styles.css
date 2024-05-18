@@ -1,107 +1,71 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2758
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red107\green0\blue1;\red255\green255\blue254;\red0\green0\blue0;
-\red251\green0\blue7;\red144\green1\blue18;\red9\green60\blue148;\red19\green118\blue70;\red15\green112\blue1;
+body {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EEF7FF;
+    margin: 0;
 }
-{\*\expandedcolortbl;;\cssrgb\c50196\c0\c0;\cssrgb\c100000\c100000\c99608;\cssrgb\c0\c0\c0;
-\cssrgb\c100000\c0\c0;\cssrgb\c63922\c8235\c8235;\cssrgb\c1569\c31765\c64706;\cssrgb\c3529\c52549\c34510;\cssrgb\c0\c50196\c0;
+.header {
+    width: 100%;
+    background-color: #4D869C;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
 }
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 body\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 font-family:\cf0 \strokec4  \cf6 \strokec6 'Playfair Display'\cf0 \strokec4 , \cf7 \strokec7 serif\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 display:\cf0 \strokec4  \cf7 \strokec7 flex\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 flex-direction:\cf0 \strokec4  \cf7 \strokec7 column\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 justify-content:\cf0 \strokec4  \cf7 \strokec7 center\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 align-items:\cf0 \strokec4  \cf7 \strokec7 center\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 height:\cf0 \strokec4  \cf8 \strokec8 100vh\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 background-color:\cf0 \strokec4  \cf7 \strokec7 #EEF7FF\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 margin:\cf0 \strokec4  \cf8 \strokec8 0\cf0 \strokec4 ;\cb1 \
-\cb3 \}\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 .header\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 width:\cf0 \strokec4  \cf8 \strokec8 100%\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 background-color:\cf0 \strokec4  \cf7 \strokec7 #4D869C\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 color:\cf0 \strokec4  \cf7 \strokec7 white\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 text-align:\cf0 \strokec4  \cf7 \strokec7 center\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 padding:\cf0 \strokec4  \cf8 \strokec8 20px\cf0 \strokec4  \cf8 \strokec8 0\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 box-shadow:\cf0 \strokec4  \cf8 \strokec8 0\cf0 \strokec4  \cf8 \strokec8 2px\cf0 \strokec4  \cf8 \strokec8 4px\cf0 \strokec4  \cf7 \strokec7 rgba(\cf8 \strokec8 0\cf0 \strokec4 , \cf8 \strokec8 0\cf0 \strokec4 , \cf8 \strokec8 0\cf0 \strokec4 , \cf8 \strokec8 0.1\cf7 \strokec7 )\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 margin:\cf0 \strokec4  \cf8 \strokec8 0\cf0 \strokec4 ;\cb1 \
-\cb3 \}\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 .header\cf0 \strokec4  \cf2 \strokec2 h2\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 margin:\cf0 \strokec4  \cf8 \strokec8 5px\cf0 \strokec4  \cf8 \strokec8 0\cf0 \strokec4  \cf8 \strokec8 0\cf0 \strokec4  \cf8 \strokec8 0\cf0 \strokec4 ; \cf9 \strokec9 /* Reduced space */\cf0 \cb1 \strokec4 \
-\cb3     \cf5 \strokec5 font-size:\cf0 \strokec4  \cf8 \strokec8 1.2em\cf0 \strokec4 ;\cb1 \
-\cb3 \}\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 textarea\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 width:\cf0 \strokec4  \cf8 \strokec8 80%\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 height:\cf0 \strokec4  \cf8 \strokec8 60%\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 padding:\cf0 \strokec4  \cf8 \strokec8 20px\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 font-size:\cf0 \strokec4  \cf8 \strokec8 18px\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 border:\cf0 \strokec4  \cf8 \strokec8 1px\cf0 \strokec4  \cf7 \strokec7 solid\cf0 \strokec4  \cf7 \strokec7 #ccc\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 border-radius:\cf0 \strokec4  \cf8 \strokec8 5px\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 outline:\cf0 \strokec4  \cf7 \strokec7 none\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 resize:\cf0 \strokec4  \cf7 \strokec7 none\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 background-color:\cf0 \strokec4  \cf7 \strokec7 white\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 margin-top:\cf0 \strokec4  \cf8 \strokec8 20px\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 font-style:\cf0 \strokec4  \cf7 \strokec7 italic\cf0 \strokec4 ;\cb1 \
-\cb3 \}\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 .controls\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 margin-top:\cf0 \strokec4  \cf8 \strokec8 20px\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 width:\cf0 \strokec4  \cf8 \strokec8 80%\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 display:\cf0 \strokec4  \cf7 \strokec7 flex\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 justify-content:\cf0 \strokec4  \cf7 \strokec7 space-between\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 align-items:\cf0 \strokec4  \cf7 \strokec7 center\cf0 \strokec4 ;\cb1 \
-\cb3 \}\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 button\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 padding:\cf0 \strokec4  \cf8 \strokec8 10px\cf0 \strokec4  \cf8 \strokec8 20px\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 font-size:\cf0 \strokec4  \cf8 \strokec8 16px\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 border:\cf0 \strokec4  \cf7 \strokec7 none\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 border-radius:\cf0 \strokec4  \cf8 \strokec8 5px\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 cursor:\cf0 \strokec4  \cf7 \strokec7 pointer\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 background-color:\cf0 \strokec4  \cf7 \strokec7 #4D869C\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 color:\cf0 \strokec4  \cf7 \strokec7 white\cf0 \strokec4 ;\cb1 \
-\cb3 \}\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 button:hover\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 background-color:\cf0 \strokec4  \cf7 \strokec7 #3b6b80\cf0 \strokec4 ;\cb1 \
-\cb3 \}\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 .social\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 margin-left:\cf0 \strokec4  \cf7 \strokec7 auto\cf0 \strokec4 ; \cf9 \strokec9 /* Aligns the icon to the right */\cf0 \cb1 \strokec4 \
-\cb3 \}\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 .social\cf0 \strokec4  \cf2 \strokec2 a\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 color:\cf0 \strokec4  \cf7 \strokec7 #4D869C\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 text-decoration:\cf0 \strokec4  \cf7 \strokec7 none\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 display:\cf0 \strokec4  \cf7 \strokec7 flex\cf0 \strokec4 ;\cb1 \
-\cb3     \cf5 \strokec5 align-items:\cf0 \strokec4  \cf7 \strokec7 center\cf0 \strokec4 ;\cb1 \
-\cb3 \}\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 .social\cf0 \strokec4  \cf2 \strokec2 a:hover\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 color:\cf0 \strokec4  \cf7 \strokec7 #3b6b80\cf0 \strokec4 ;\cb1 \
-\cb3 \}\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \cb3 \strokec2 .social\cf0 \strokec4  \cf2 \strokec2 img\cf0 \strokec4  \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 width:\cf0 \strokec4  \cf8 \strokec8 24px\cf0 \strokec4 ; \cf9 \strokec9 /* Adjust size as needed */\cf0 \cb1 \strokec4 \
-\cb3     \cf5 \strokec5 height:\cf0 \strokec4  \cf8 \strokec8 24px\cf0 \strokec4 ; \cf9 \strokec9 /* Adjust size as needed */\cf0 \cb1 \strokec4 \
-\cb3 \}\cb1 \
-\
+.header h2 {
+    margin: 5px 0 0 0; /* Reduced space */
+    font-size: 1.2em;
+}
+textarea {
+    width: 80%;
+    height: 60%;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    background-color: white;
+    margin-top: 20px;
+    font-style: italic;
+}
+.controls {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4D869C;
+    color: white;
+}
+button:hover {
+    background-color: #3b6b80;
+}
+.social {
+    margin-left: auto; /* Aligns the icon to the right */
+}
+.social a {
+    color: #4D869C;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.social a:hover {
+    color: #3b6b80;
+}
+.social img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
 }
