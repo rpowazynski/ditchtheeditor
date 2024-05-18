@@ -18,15 +18,15 @@
         }
         .header {
             width: 100%;
-            background-color: #28385E;
+            background-color: #4D869C;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 10px 0; 
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin: 0;
         }
         .header h2 {
-            margin: 5px 0 0 0; /* Reduced space */
+            margin: 10px 0 0 0;
             font-size: 1.2em;
         }
         textarea {
@@ -49,41 +49,25 @@
             justify-content: space-between;
             align-items: center;
         }
-        .button-group {
-            display: flex;
-            gap: 10px;
-        }
         button {
             padding: 10px 20px;
             font-size: 16px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-        }
-        #saveButton {
-            background-color: #516C8D;
+            background-color: #4D869C;
             color: white;
         }
-        #saveButton:hover {
+        button:hover {
             background-color: #3b6b80;
         }
-        #refreshButton {
-            background-color: #DDDDDD;
-            color: #28385E;
-        }
-        #refreshButton:hover {
-            background-color: #1d2a46;
-        }
         .social {
-            width: 100%;
-            text-align: center;
-            margin-top: 10px;
+            margin-left: auto; /* Aligns the icon to the right */
         }
         .social a {
             color: #4D869C;
             text-decoration: none;
             display: flex;
-            justify-content: center;
             align-items: center;
         }
         .social a:hover {
@@ -103,17 +87,15 @@
     <textarea id="writingArea" placeholder="Start writing..."></textarea>
     <div class="controls">
         <button id="saveButton">Save</button>
-        <button id="refreshButton">Refresh</button>
-    </div>
-    <div class="social">
-        <a href="https://www.x.com/ditchtheeditor" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg" alt="Twitter Icon">
-        </a>
+        <div class="social">
+            <a href="https://www.x.com/ditchtheeditor" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg" alt="Twitter Icon">
+            </a>
+        </div>
     </div>
     <script>
         const textarea = document.getElementById('writingArea');
         const saveButton = document.getElementById('saveButton');
-        const refreshButton = document.getElementById('refreshButton');
 
         textarea.addEventListener('keydown', (e) => {
             if (['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) {
@@ -129,10 +111,7 @@
             link.download = 'writing.txt';
             link.click();
         });
-
-        refreshButton.addEventListener('click', () => {
-            textarea.value = '';
-        });
     </script>
 </body>
 </html>
+
